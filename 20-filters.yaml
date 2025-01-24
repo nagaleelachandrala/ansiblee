@@ -5,3 +5,18 @@
   - name: handle undefine variaable
     ansible.builtin.debug:
       msg: "Hello {{ person | default('Leela') }}"
+
+  - name: convert string to list
+    vars:
+      fruits: "apple, banana, orange"
+    ansible.builtin.debug:
+      msg: "Fruits are: {{ fruits | split(',') }}"
+
+  - name: convert map into list
+    vars:
+      course:
+        name: ansible
+        duration: 10hrs
+        trainer: sivakumar
+    ansible.builtin.debug:
+      msg: "course info: {{ course | dict2items }}"
