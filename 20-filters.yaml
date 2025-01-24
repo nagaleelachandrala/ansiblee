@@ -24,7 +24,7 @@
     vars:
       course:
       - {'key': 'name', 'value': 'ansible'}
-      - {'key': 'duration', 'value': '10hrs'}, 
+      - {'key': 'duration', 'value': '10hrs'}
       - {'key': 'trainer', 'value': 'sivakumar'}
     ansible.builtin.debug:
       msg: "Course info: {{ course | items2dict }}"
