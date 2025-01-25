@@ -3,4 +3,4 @@
   connection: local
   tasks:
   - name: execue ls command
-    ansisble.builtin.command: ls -ltr > /tpm/output.txt
+      ansisble.builtin.command: ls -ltr > /tpm/output.txt
