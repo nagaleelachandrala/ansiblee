@@ -1,6 +1,6 @@
 - name: shell Vs command
   hosts: local
   connection: local
-  tasks
+  tasks:
   - name: execue ls command
     ansisble.builtin.command: ls -ltr > /tpm/output.txt
